@@ -13,10 +13,7 @@ console.log("Type of age:", typeof age);
 console.log("Type of name:", typeof named);
 console.log("Type of country:", typeof country);
 
-// 🧮 Combine strings and variables
 console.log(`Hi, I'm ${named}, I'm ${age} years old and I live in ${country}.`);
 
-// 💬 Small challenge
-// Try declaring a new variable called "hobby" and print it in a sentence below!
 let hobby = "coding";
 console.log(`My favorite hobby is ${hobby}.`);
