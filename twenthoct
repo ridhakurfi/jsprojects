@@ -1,0 +1,18 @@
+let fruits = ["apple", "banana", "mango"];
+console.log("All fruits:", fruits);
+
+console.log("First fruit:", fruits[0]);
+console.log("Last fruit:", fruits[fruits.length - 1]);
+
+fruits.push("orange");
+console.log("After adding orange:", fruits);
+
+fruits.pop();
+console.log("After removing last fruit:", fruits);
+
+console.log("List of fruits:");
+for (let i = 0; i < fruits.length; i++) {
+  console.log(`- ${fruits[i]}`);
+}
+
+fruits.forEach(fruit => console.log("🍎", fruit));
