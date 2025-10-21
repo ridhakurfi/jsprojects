@@ -16,3 +16,36 @@ for (let i = 0; i < fruits.length; i++) {
 }
 
 fruits.forEach(fruit => console.log("🍎", fruit));
+
+const person = {
+  name: "Ahmed",
+  age: 21,
+  country: "Pakistan",
+  hobby: "surfing",
+};
+
+console.log("Name:", person.name);
+console.log("Age:", person.age);
+
+person.job = "Student";
+console.log("After adding job:", person);
+
+person.age = 22;
+console.log("After birthday:", person);
+
+console.log("Person details:");
+for (let key in person) {
+  console.log(`${key}: ${person[key]}`);
+}
+
+const profile = {
+  id: 1,
+  info: person,
+  skills: ["HTML", "CSS", "JavaScript"],
+};
+
+console.log("Full profile:", profile);
+console.log("Main skill:", profile.skills[2]);
+
+profile.skills.push("React");
+console.log("Updated skills:", profile.skills);
