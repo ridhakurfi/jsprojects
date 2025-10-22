@@ -1,0 +1,44 @@
+let temperature = 31;
+
+if (temperature > 30) {
+  console.log("It's a hot day! ☀️");
+} else if (temperature >= 20) {
+  console.log("Nice and warm 😎");
+} else {
+  console.log("Pretty chilly ❄️");
+}
+
+function greet(name) {
+  console.log(`Hello, ${name}! Welcome back! 👋`);
+}
+
+greet("Jamie");
+
+function calculateArea(width, height) {
+  return width * height;
+}
+
+let area = calculateArea(5, 10);
+console.log("The area is:", area);
+
+function checkEligibility(age) {
+  if (age >= 18) {
+    console.log("✅ You are eligible to vote.");
+  } else {
+    console.log("❌ You are too young to vote.");
+  }
+}
+
+checkEligibility(17);
+checkEligibility(21);
+
+function checkEvenOdd(number) {
+  if (number % 2 === 0) {
+    console.log(number, "is even ⚙️");
+  } else {
+    console.log(number, "is odd 🔹");
+  }
+}
+
+checkEvenOdd(7);
+checkEvenOdd(42);
