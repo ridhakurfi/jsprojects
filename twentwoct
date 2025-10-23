@@ -42,3 +42,5 @@ function checkEvenOdd(number) {
 
 checkEvenOdd(7);
 checkEvenOdd(42);
+
+let number = 7;
