@@ -1,0 +1,8 @@
+let randomNumber = Math.floor(Math.random() * 10) + 1; // gives 1–10
+console.log("Today's random number is:", randomNumber);
+
+if (randomNumber > 5) {
+  console.log("That's a big one! 🎲");
+} else {
+  console.log("Small number today. 😌");
+}
