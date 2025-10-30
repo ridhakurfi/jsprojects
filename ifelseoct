@@ -4,7 +4,7 @@ console.log("Score:", score);
 if (score >= 90) {
   console.log("Grade: A (Excellent)");
 } else if (score >= 80) {
-  console.log("Grade: B 👍");
+  console.log("Grade: B (Great)");
 } else if (score >= 70) {
   console.log("Grade: C 🙂");
 } else if (score >= 60) {
