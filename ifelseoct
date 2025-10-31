@@ -12,3 +12,29 @@ if (score >= 90) {
 } else {
   console.log("Grade: F 💀");
 }
+
+let scores = [];
+let totalStudents = 5;
+
+// generate random scores between 0–100
+for (let i = 0; i < totalStudents; i++) {
+  let score = Math.floor(Math.random() * 101);
+  scores.push(score);
+}
+
+console.log("Scores:", scores);
+
+// calculate average
+let total = 0;
+for (let i = 0; i < scores.length; i++) {
+  total += scores[i];
+}
+
+let average = total / scores.length;
+console.log("Average score:", average.toFixed(2));
+
+// basic remark
+if (average >= 90) console.log("Excellent! 🏆");
+else if (average >= 75) console.log("Good work! 👍");
+else if (average >= 60) console.log("Needs improvement 😅");
+else console.log("Try again next time 💪");
