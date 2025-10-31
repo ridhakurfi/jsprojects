@@ -34,7 +34,7 @@ let average = total / scores.length;
 console.log("Average score:", average.toFixed(2));
 
 // basic remark
-if (average >= 90) console.log("Excellent! 🏆");
-else if (average >= 75) console.log("Good work! 👍");
-else if (average >= 60) console.log("Needs improvement 😅");
-else console.log("Try again next time 💪");
+if (average >= 90) console.log("Excellent!");
+else if (average >= 75) console.log("Good work!");
+else if (average >= 60) console.log("Needs improvement");
+else console.log("Try again next time");
