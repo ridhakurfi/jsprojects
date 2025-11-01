@@ -38,3 +38,17 @@ if (average >= 90) console.log("Excellent!");
 else if (average >= 75) console.log("Good work!");
 else if (average >= 60) console.log("Needs improvement");
 else console.log("Try again next time");
+
+function calculateAverage(scores) {
+  let total = 0;
+  for (let i = 0; i < scores.length; i++) {
+    total += scores[i];
+  }
+  return total / scores.length;
+}
+
+let scores1 = [90, 80, 100];
+let scores2 = [60, 70, 65];
+
+console.log("Average of scores1:", calculateAverage(scores1).toFixed(2));
+console.log("Average of scores2:", calculateAverage(scores2).toFixed(2));
