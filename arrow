@@ -94,12 +94,19 @@ greet();
 
 const firstName = ["Billie", "Jim", "Sarah", "Carl", "Carrie"];
 const lastName = ["McGrath", "Bailey", "Carmine", "Gertrude", "Hill"];
-
 const randomized = (arr) => arr[Math.floor(Math.random() * arr.length)];
-
 const fullName = () => {
   const allName = `${randomized(firstName)} ${randomized(lastName)}`;
   console.log(allName);
 };
-
 fullName();
+
+const color = ["Red", "Blue", "Black", "Purple", "White"];
+const car = ["Maserati", "Chevrolet", "Toyota", "Honda", "Hyundai"];
+const randomizing = (arr) => arr[Math.floor(Math.random() * arr.length)];
+const carWithColor = () => {
+  const carAndColor = `${randomizing(color)} ${randomizing(car)}`;
+  console.log(carAndColor);
+};
+
+carWithColor();
