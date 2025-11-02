@@ -4,18 +4,6 @@
 // }
 // plant("Spinach");
 
-// //2
-// function superhero(hero) {
-//   console.log("Look up in the sky its", hero);
-// }
-// superhero("Batman");
-
-// //3
-// function language(lang) {
-//   console.log("I am currently learning the language", lang);
-// }
-// language("French");
-
 // //4
 // const machine = (gadget) => {
 //   console.log(`I own a ${gadget}, and its not cheap ofc`);
@@ -36,18 +24,6 @@
 // };
 // pet("crocodillo");
 
-// // 7
-// const add = (a, b) => a + b;
-// console.log("2 tambah 3 adalah", add(2, 3));
-
-// //8
-// const tambah = (c, d) => c + d;
-// console.log("5 tambah 6 adalah", tambah(5, 6));
-
-// //9
-// const kurang = (e, f) => e - f;
-// console.log("6 kurang 3 adalah", kurang(6, 3));
-
 // //10
 // const kali = (f, g) => f * g;
 // console.log("2 kali 5 adalah", kali(2, 5));
@@ -55,18 +31,6 @@
 // //11
 // const bagi = (h, i) => h / i;
 // console.log("6 bagi 2 adalah", bagi(6, 2));
-
-// const ditambah = (j, k) => {
-//   let result = j + k;
-//   return result;
-// };
-// console.log("2 ditambah 4 adalah", ditambah(2, 4));
-
-// const dikurang = (l, m) => {
-//   let result = l - m;
-//   return result;
-// };
-// console.log("5 dikurang 1 adalah", dikurang(5, 1));
 
 // const dikali = (o, p) => {
 //   let result = o * p;
@@ -82,14 +46,11 @@
 
 const greetings = ["Hello", "Hi", "Yo", "Konnichiwa", "Hey there"];
 const names = ["Ridha", "Friend", "Coder", "World", "Mate"];
-
 const randomItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
-
 const greet = () => {
   const message = `${randomItem(greetings)}, ${randomItem(names)}! 👋`;
   console.log(message);
 };
-
 greet();
 
 const firstName = ["Billie", "Jim", "Sarah", "Carl", "Carrie"];
@@ -108,5 +69,4 @@ const carWithColor = () => {
   const carAndColor = `${randomizing(color)} ${randomizing(car)}`;
   console.log(carAndColor);
 };
-
 carWithColor();
