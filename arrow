@@ -1,67 +1,72 @@
-//1
-function plant(greenery) {
-  console.log("Save nature! plant a", greenery);
-}
-plant("Spinach");
+// //1
+// function plant(greenery) {
+//   console.log("Save nature! plant a", greenery);
+// }
+// plant("Spinach");
 
-//2
-function superhero(hero) {
-  console.log("Look up in the sky its", hero);
-}
-superhero("Batman");
+// //2
+// function superhero(hero) {
+//   console.log("Look up in the sky its", hero);
+// }
+// superhero("Batman");
 
-//3
-function language(lang) {
-  console.log("I am currently learning the language", lang);
-}
-language("French");
+// //3
+// function language(lang) {
+//   console.log("I am currently learning the language", lang);
+// }
+// language("French");
 
-//4
-const machine = (gadget) => {
-  console.log(`I own a ${gadget}, and its not cheap ofc`);
-};
-machine("Ikos Cigarette");
-
-//5
-const genre = (music) => {
-  console.log(
-    `I listen to ${music}, it is a such a peacefull music to listen to`
-  );
-};
-genre("Emo");
-
-//6
-const pet = (domestic) => {
-  console.log(`I have a ${domestic} at home, we kept it in a cage`);
-};
-pet("crocodillo");
-
-// 7
-const add = (a, b) => a + b;
-console.log("2 tambah 3 adalah", add(2, 3));
-
-//8
-const tambah = (c, d) => c + d;
-console.log("5 tambah 6 adalah", tambah(5, 6));
-
-//9
-const kurang = (e, f) => e - f;
-console.log("6 kurang 3 adalah", kurang(6, 3));
-
-//10
-const kali = (f, g) => f * g;
-console.log("2 kali 5 adalah", kali(2, 5));
-
-//11
-const bagi = (h, i) => h / i;
-console.log("6 bagi 2 adalah", bagi(6, 2));
-
-// const multiply = (x, y) => {
-//   let result = x * y;
-//   return result;
+// //4
+// const machine = (gadget) => {
+//   console.log(`I own a ${gadget}, and its not cheap ofc`);
 // };
+// machine("Ikos Cigarette");
 
-// console.log("5 × 4 =", multiply(5, 4));
+// //5
+// const genre = (music) => {
+//   console.log(
+//     `I listen to ${music}, it is a such a peacefull music to listen to`
+//   );
+// };
+// genre("Emo");
+
+// //6
+// const pet = (domestic) => {
+//   console.log(`I have a ${domestic} at home, we kept it in a cage`);
+// };
+// pet("crocodillo");
+
+// // 7
+// const add = (a, b) => a + b;
+// console.log("2 tambah 3 adalah", add(2, 3));
+
+// //8
+// const tambah = (c, d) => c + d;
+// console.log("5 tambah 6 adalah", tambah(5, 6));
+
+// //9
+// const kurang = (e, f) => e - f;
+// console.log("6 kurang 3 adalah", kurang(6, 3));
+
+// //10
+// const kali = (f, g) => f * g;
+// console.log("2 kali 5 adalah", kali(2, 5));
+
+// //11
+// const bagi = (h, i) => h / i;
+// console.log("6 bagi 2 adalah", bagi(6, 2));
+
+const multiply = (x, y) => {
+  let result = x * y;
+  return result;
+};
+console.log("5 × 4 =", multiply(5, 4));
+
+const ditambah = (j, k) => {
+  let result = j + k;
+  return result;
+};
+console.log("2 ditambah 4 adalah", ditambah(2, 4));
 
 // const greetings = ["Hello", "Hi", "Yo", "Konnichiwa", "Hey there"];
 // const names = ["Ridha", "Friend", "Coder", "World", "Mate"];
