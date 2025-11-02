@@ -56,26 +56,50 @@
 // const bagi = (h, i) => h / i;
 // console.log("6 bagi 2 adalah", bagi(6, 2));
 
-const multiply = (x, y) => {
-  let result = x * y;
-  return result;
-};
-console.log("5 × 4 =", multiply(5, 4));
-
-const ditambah = (j, k) => {
-  let result = j + k;
-  return result;
-};
-console.log("2 ditambah 4 adalah", ditambah(2, 4));
-
-// const greetings = ["Hello", "Hi", "Yo", "Konnichiwa", "Hey there"];
-// const names = ["Ridha", "Friend", "Coder", "World", "Mate"];
-
-// const randomItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
-
-// const greet = () => {
-//   const message = `${randomItem(greetings)}, ${randomItem(names)}! 👋`;
-//   console.log(message);
+// const ditambah = (j, k) => {
+//   let result = j + k;
+//   return result;
 // };
+// console.log("2 ditambah 4 adalah", ditambah(2, 4));
 
-// greet();
+// const dikurang = (l, m) => {
+//   let result = l - m;
+//   return result;
+// };
+// console.log("5 dikurang 1 adalah", dikurang(5, 1));
+
+// const dikali = (o, p) => {
+//   let result = o * p;
+//   return result;
+// };
+// console.log("2 dikali 2 adalah", dikali(2, 2));
+
+// const dibagi = (q, r) => {
+//   let result = q / r;
+//   return result;
+// };
+// console.log("8 dibagi 2 adalah", dibagi(8, 2));
+
+const greetings = ["Hello", "Hi", "Yo", "Konnichiwa", "Hey there"];
+const names = ["Ridha", "Friend", "Coder", "World", "Mate"];
+
+const randomItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
+
+const greet = () => {
+  const message = `${randomItem(greetings)}, ${randomItem(names)}! 👋`;
+  console.log(message);
+};
+
+greet();
+
+const firstName = ["Billie", "Jim", "Sarah", "Carl", "Carrie"];
+const lastName = ["McGrath", "Bailey", "Carmine", "Gertrude", "Hill"];
+
+const randomized = (arr) => arr[Math.floor(Math.random() * arr.length)];
+
+const fullName = () => {
+  const allName = `${randomized(firstName)} ${randomized(lastName)}`;
+  console.log(allName);
+};
+
+fullName();
