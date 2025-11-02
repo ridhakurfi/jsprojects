@@ -1,4 +1,4 @@
-let score = Math.floor(Math.random() * 101); // random 0–100
+let score = Math.floor(Math.random() * 101);
 console.log("Score:", score);
 
 if (score >= 90) {
@@ -16,7 +16,6 @@ if (score >= 90) {
 let scores = [];
 let totalStudents = 5;
 
-// generate random scores between 0–100
 for (let i = 0; i < totalStudents; i++) {
   let score = Math.floor(Math.random() * 101);
   scores.push(score);
@@ -24,7 +23,6 @@ for (let i = 0; i < totalStudents; i++) {
 
 console.log("Scores:", scores);
 
-// calculate average
 let total = 0;
 for (let i = 0; i < scores.length; i++) {
   total += scores[i];
