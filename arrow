@@ -44,25 +44,6 @@
 // };
 // console.log("8 dibagi 2 adalah", dibagi(8, 2));
 
-// const color = ["Red", "Blue", "Black", "Purple", "White"];
-// const car = ["Maserati", "Chevrolet", "Toyota", "Honda", "Hyundai"];
-// const randomizing = (arr) => arr[Math.floor(Math.random() * arr.length)];
-// const carWithColor = () => {
-//   const carAndColor = `${randomizing(color)} ${randomizing(car)}`;
-//   console.log(carAndColor);
-// };
-// carWithColor();
-
-// const genre = ["Horror", "Drama", "Art", "Comedy", "Action"];
-// const media = ["Game", "Movie", "Series", "Anime", "Theater"];
-
-// const randoming = (arr) => arr[Math.floor(Math.random() * arr.length)];
-
-// const mediaGenre = () => {
-//   const spareTime = `${randoming(genre)} ${randoming(media)}`;
-//   console.log(spareTime);
-// };
-
 const vegetables = ["tomato", "spinach", "chili", "pepper", "celery"];
 const dish = ["soup", "fries", "porridge", "cake", "bread"];
 
@@ -73,3 +54,15 @@ const veggieDish = () => {
   console.log(vegemite);
 };
 veggieDish();
+
+const nation = ["Indonesian", "Japanese", "Brazilian", "Indian", "Russian"];
+const vehicle = ["Tank", "Warthog", "Humvee", "Aircraft Carrier", "Apache"];
+
+const nat = nation[Math.floor(Math.random() * nation.length)];
+const veh = vehicle[Math.floor(Math.random() * vehicle.length)];
+
+const nationalVehicle = () => {
+  console.log(`${nat} ${veh}`);
+};
+
+nationalVehicle();
