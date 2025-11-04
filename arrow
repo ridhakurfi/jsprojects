@@ -53,24 +53,23 @@
 // };
 // carWithColor();
 
-// const material = ["Steel", "Wooden", "Plastic", "Iron", "Ceramic"];
-// const furniture = ["Table", "Chair", "Sofa", "Window", "Door"];
+// const genre = ["Horror", "Drama", "Art", "Comedy", "Action"];
+// const media = ["Game", "Movie", "Series", "Anime", "Theater"];
 
-// const randomed = (arr) => arr[Math.floor(Math.random() * arr.length)];
+// const randoming = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
-// const homeFurniture = () => {
-//   const furnitura = `${randomed(material)} ${randomed(furniture)}`;
-//   console.log(furnitura);
+// const mediaGenre = () => {
+//   const spareTime = `${randoming(genre)} ${randoming(media)}`;
+//   console.log(spareTime);
 // };
 
-// homeFurniture();
+const vegetables = ["tomato", "spinach", "chili", "pepper", "celery"];
+const dish = ["soup", "fries", "porridge", "cake", "bread"];
 
-const genre = ["Horror", "Drama", "Art", "Comedy", "Action"];
-const media = ["Game", "Movie", "Series", "Anime", "Theater"];
+const randomic = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
-const randoming = (arr) => arr[Math.floor(Math.random() * arr.length)];
-
-const mediaGenre = () => {
-  const spareTime = `${randoming(genre)} ${randoming(media)}`;
-  console.log(spareTime);
+const veggieDish = () => {
+  const vegemite = `${randomic(vegetables)} ${randomic(dish)}`;
+  console.log(vegemite);
 };
+veggieDish();
