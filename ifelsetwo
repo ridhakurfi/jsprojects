@@ -1,0 +1,29 @@
+function findHighest(scores) {
+  let highest = scores[0];
+  for (let i = 1; i < scores.length; i++) {
+    if (scores[i] > highest) highest = scores[i];
+  }
+  return highest;
+}
+
+function findLowest(scores) {
+  let lowest = scores[0];
+  for (let i = 1; i < scores.length; i++) {
+    if (scores[i] < lowest) lowest = scores[i];
+  }
+  return lowest;
+}
+
+function calculateAverage(scores) {
+  let total = 0;
+  for (let i = 0; i < scores.length; i++) {
+    total += scores[i];
+  }
+  return total / scores.length;
+}
+
+let scores = [88, 72, 95, 60, 83];
+console.log("Scores:", scores);
+console.log("Highest:", findHighest(scores));
+console.log("Lowest:", findLowest(scores));
+console.log("Average:", calculateAverage(scores).toFixed(2));

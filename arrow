@@ -44,43 +44,33 @@
 // };
 // console.log("8 dibagi 2 adalah", dibagi(8, 2));
 
-const firstName = ["Billie", "Jim", "Sarah", "Carl", "Carrie"];
-const lastName = ["McGrath", "Bailey", "Carmine", "Gertrude", "Hill"];
-const randomized = (arr) => arr[Math.floor(Math.random() * arr.length)];
-const fullName = () => {
-  const allName = `${randomized(firstName)} ${randomized(lastName)}`;
-  console.log(allName);
+// const color = ["Red", "Blue", "Black", "Purple", "White"];
+// const car = ["Maserati", "Chevrolet", "Toyota", "Honda", "Hyundai"];
+// const randomizing = (arr) => arr[Math.floor(Math.random() * arr.length)];
+// const carWithColor = () => {
+//   const carAndColor = `${randomizing(color)} ${randomizing(car)}`;
+//   console.log(carAndColor);
+// };
+// carWithColor();
+
+// const material = ["Steel", "Wooden", "Plastic", "Iron", "Ceramic"];
+// const furniture = ["Table", "Chair", "Sofa", "Window", "Door"];
+
+// const randomed = (arr) => arr[Math.floor(Math.random() * arr.length)];
+
+// const homeFurniture = () => {
+//   const furnitura = `${randomed(material)} ${randomed(furniture)}`;
+//   console.log(furnitura);
+// };
+
+// homeFurniture();
+
+const genre = ["Horror", "Drama", "Art", "Comedy", "Action"];
+const media = ["Game", "Movie", "Series", "Anime", "Theater"];
+
+const randoming = (arr) => arr[Math.floor(Math.random() * arr.length)];
+
+const mediaGenre = () => {
+  const spareTime = `${randoming(genre)} ${randoming(media)}`;
+  console.log(spareTime);
 };
-fullName();
-
-const color = ["Red", "Blue", "Black", "Purple", "White"];
-const car = ["Maserati", "Chevrolet", "Toyota", "Honda", "Hyundai"];
-const randomizing = (arr) => arr[Math.floor(Math.random() * arr.length)];
-const carWithColor = () => {
-  const carAndColor = `${randomizing(color)} ${randomizing(car)}`;
-  console.log(carAndColor);
-};
-carWithColor();
-
-const emotions = ["Sad", "Happpy", "Angry", "Shy", "Timid"];
-const students = ["Tommy", "Cody", "Tina", "Sheila", "Jerry"];
-
-const randomizer = (arr) => arr[Math.floor(Math.random() * arr.length)];
-
-const emoStudents = () => {
-  const emoKids = `${randomizer(emotions)} ${randomizer(students)}`;
-  console.log(emoKids);
-};
-emoStudents();
-
-const material = ["Steel", "Wooden", "Plastic", "Iron", "Ceramic"];
-const furniture = ["Table", "Chair", "Sofa", "Window", "Door"];
-
-const randomed = (arr) => arr[Math.floor(Math.random() * arr.length)];
-
-const homeFurniture = () => {
-  const furnitura = `${randomed(material)} ${randomed(furniture)}`;
-  console.log(furnitura);
-};
-
-homeFurniture();
