@@ -56,16 +56,32 @@ const nationalVehicle = () => {
 
 nationalVehicle();
 
-const material = ["Adamantium", "Titanium", "Steel", "Wooden", "Opal"];
-const furniture = ["Refrigerator", "Table", "Chair", "Window", "Door"];
+function findHighest(scores) {
+  return Math.max(...scores);
+}
 
-const randomed = (ray) => {
-  return ray[Math.floor(Math.random() * ray.length)];
-};
+function findLowest(scores) {
+  return Math.min(...scores);
+}
 
-const furnitura = () => {
-  const furn = `${randomed(material)} ${randomed(furniture)}`;
-  console.log(furn);
-};
+function calculateAverage(scores) {
+  let total = 0;
+  for (let i = 0; i < scores.length; i++) total += scores[i];
+  return total / scores.length;
+}
 
-furnitura();
+let student = "James";
+let scores = [90, 75, 88, 92, 70];
+
+console.log("📊 Report Card");
+console.log("-------------------");
+console.log("Student:", student);
+console.log("Scores:", scores.join(", "));
+console.log("Highest:", findHighest(scores));
+console.log("Lowest:", findLowest(scores));
+console.log("Average:", calculateAverage(scores).toFixed(2));
+console.log("-------------------");
+
+if (calculateAverage(scores) >= 85) console.log("Result: Excellent! 🏆");
+else if (calculateAverage(scores) >= 70) console.log("Result: Good 👍");
+else console.log("Result: Needs Improvement 😅");
