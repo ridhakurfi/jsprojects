@@ -44,17 +44,6 @@
 // };
 // console.log("8 dibagi 2 adalah", dibagi(8, 2));
 
-// const vegetables = ["tomato", "spinach", "chili", "pepper", "celery"];
-// const dish = ["soup", "fries", "porridge", "cake", "bread"];
-
-// const randomic = (arr) => arr[Math.floor(Math.random() * arr.length)];
-
-// const veggieDish = () => {
-//   const vegemite = `${randomic(vegetables)} ${randomic(dish)}`;
-//   console.log(vegemite);
-// };
-// veggieDish();
-
 const nation = ["Indonesian", "Japanese", "Brazilian", "Indian", "Russian"];
 const vehicle = ["Tank", "Warthog", "Humvee", "Aircraft Carrier", "Apache"];
 
@@ -66,3 +55,17 @@ const nationalVehicle = () => {
 };
 
 nationalVehicle();
+
+const material = ["Adamantium", "Titanium", "Steel", "Wooden", "Opal"];
+const furniture = ["Refrigerator", "Table", "Chair", "Window", "Door"];
+
+const randomed = (ray) => {
+  return ray[Math.floor(Math.random() * ray.length)];
+};
+
+const furnitura = () => {
+  const furn = `${randomed(material)} ${randomed(furniture)}`;
+  console.log(furn);
+};
+
+furnitura();
