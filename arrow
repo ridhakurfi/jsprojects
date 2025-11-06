@@ -4,12 +4,6 @@
 // }
 // plant("Spinach");
 
-// //4
-// const machine = (gadget) => {
-//   console.log(`I own a ${gadget}, and its not cheap ofc`);
-// };
-// machine("Ikos Cigarette");
-
 // //5
 // const genre = (music) => {
 //   console.log(
@@ -18,19 +12,9 @@
 // };
 // genre("Emo");
 
-// //6
-// const pet = (domestic) => {
-//   console.log(`I have a ${domestic} at home, we kept it in a cage`);
-// };
-// pet("crocodillo");
-
 // //10
 // const kali = (f, g) => f * g;
 // console.log("2 kali 5 adalah", kali(2, 5));
-
-// //11
-// const bagi = (h, i) => h / i;
-// console.log("6 bagi 2 adalah", bagi(6, 2));
 
 // const dikali = (o, p) => {
 //   let result = o * p;
@@ -38,29 +22,25 @@
 // };
 // console.log("2 dikali 2 adalah", dikali(2, 2));
 
-// const dibagi = (q, r) => {
-//   let result = q / r;
-//   return result;
+// const nation = ["Indonesian", "Japanese", "Brazilian", "Indian", "Russian"];
+// const vehicle = ["Tank", "Warthog", "Humvee", "Aircraft Carrier", "Apache"];
+
+// const nat = nation[Math.floor(Math.random() * nation.length)];
+// const veh = vehicle[Math.floor(Math.random() * vehicle.length)];
+
+// const nationalVehicle = () => {
+//   console.log(`${nat} ${veh}`);
 // };
-// console.log("8 dibagi 2 adalah", dibagi(8, 2));
 
-const nation = ["Indonesian", "Japanese", "Brazilian", "Indian", "Russian"];
-const vehicle = ["Tank", "Warthog", "Humvee", "Aircraft Carrier", "Apache"];
+// nationalVehicle();
 
-const nat = nation[Math.floor(Math.random() * nation.length)];
-const veh = vehicle[Math.floor(Math.random() * vehicle.length)];
+const enhancer = ["Galactic", "Fusion", "Atomic", "Photogenic", "Chaotic"];
+const move = ["Punch", "Kick", "Uppercut", "Chop", "Toss"];
 
-const nationalVehicle = () => {
-  console.log(`${nat} ${veh}`);
-};
-
-nationalVehicle();
-
-let number = Math.floor(Math.random() * 100); // random 0–99
-console.log("Number:", number);
-
-if (number % 2 === 0) {
-  console.log("It's even ⚡");
-} else {
-  console.log("It's odd 🌙");
+function randomed(arr, arr2) {
+  const shuffled = arr[Math.floor(Math.random() * arr.length)];
+  const shuffled2 = arr2[Math.floor(Math.random() * arr2.length)];
+  console.log(`${shuffled} ${shuffled2}`);
 }
+
+randomed(enhancer, move);
