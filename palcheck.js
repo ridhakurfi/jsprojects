@@ -22,4 +22,3 @@ function isPalindrome(str) {
 }
 
 const a = palindromeSwapper("korok");
-console.log(a);
