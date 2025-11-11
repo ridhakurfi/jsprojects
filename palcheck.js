@@ -1,3 +1,7 @@
+function isPalindrome(str) {
+  if (str.split("").reverse().join("") === str) return true;
+  return false;
+}
 function palindromeSwapper(str) {
   let newStr = "";
   for (let i = 0; i < str.length - 1; i++) {
@@ -16,9 +20,24 @@ function palindromeSwapper(str) {
   return false;
 }
 
-function isPalindrome(str) {
-  if (str.split("").reverse().join("") === str) return true;
-  return false;
-}
+const loopChecker = (stringing) => {
+  let newStringing = "";
+  let xCount = 0;
+  let yCount = 0;
+  let zCount = 0;
+  for (let x = 0; x < stringing.length; x++) {
+    xCount++;
+    for (let y = 0; y < stringing.length; y++) {
+      yCount++;
+      for (let z = 0; z < stringing.length; z++) {
+        zCount++;
+        if (x === z) {
+          newStringing += stringing[y];
+        }
+      }
+    }
+  }
+  console.log(xCount, yCount, zCount, newStringing);
+};
 
-const a = palindromeSwapper("korok");
+loopChecker("james")
