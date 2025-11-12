@@ -53,5 +53,3 @@ const aChecker = (toCheck) => {
   }
   console.log(`there is ${aCount} ${plurals} in this word`);
 };
-
-aChecker("ant");
