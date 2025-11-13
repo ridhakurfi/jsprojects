@@ -20,26 +20,13 @@
 //   return false;
 // }
 
-// function counter(string1) {
-//   let arraycounter = {};
-//   for (let i = 0; i < string1.length; i++) {
-//     const char = string1[1];
-//   }
-//   console.log(arraycounter);
-// }
-
-// counter("aaa");
-
-const alphabetCounter =(item)=>{
-  let newItem ={}
-  for (let i = 0; i < item.length; i++) {
-    if(newItem[item[i]]===undefined){
-      newItem[item[i]]=0
-    } else{
-      newItem[item[i]]+1
-    }
+const letterTick = (wordInput) => {
+  let wordOutput = {};
+  for (let i = 0; i < wordInput.length; i++) {
+    wordOutput[wordInput[i]] = (wordOutput[wordInput[i]] || 0) + 1;
   }
-  return newItem
-}
+  return wordOutput;
+};
 
-console.log(alphabetCounter("abc"));
+console.log(letterTick("aaaabbbbcccc"));
+
