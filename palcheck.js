@@ -20,36 +20,26 @@
 //   return false;
 // }
 
-// const loopChecker = (stringing) => {
-//   let newStringing = "";
-//   let xCount = 0;
-//   let yCount = 0;
-//   let zCount = 0;
-//   for (let x = 0; x < stringing.length; x++) {
-//     xCount++;
-//     for (let y = 0; y < stringing.length; y++) {
-//       yCount++;
-//       for (let z = 0; z < stringing.length; z++) {
-//         zCount++;
-//         if (x === z) {
-//           newStringing += stringing[y];
-//         }
-//       }
-//     }
+// function counter(string1) {
+//   let arraycounter = {};
+//   for (let i = 0; i < string1.length; i++) {
+//     const char = string1[1];
 //   }
-//   console.log(xCount, yCount, zCount, newStringing);
-// };
+//   console.log(arraycounter);
+// }
 
-const aChecker = (toCheck) => {
-  let aCount = 0;
-  let plurals = "a's";
-  for (let i = 0; i < toCheck.length; i++) {
-    if (toCheck[i] === "a") {
-      aCount++;
+// counter("aaa");
+
+const alphabetCounter =(item)=>{
+  let newItem ={}
+  for (let i = 0; i < item.length; i++) {
+    if(newItem[item[i]]===undefined){
+      newItem[item[i]]=0
+    } else{
+      newItem[item[i]]+1
     }
   }
-  if (aCount === 1) {
-    plurals = "a";
-  }
-  console.log(`there is ${aCount} ${plurals} in this word`);
-};
+  return newItem
+}
+
+console.log(alphabetCounter("abc"));
