@@ -20,13 +20,12 @@
 //   return false;
 // }
 
-const letterTick = (wordInput) => {
-  let wordOutput = {};
-  for (let i = 0; i < wordInput.length; i++) {
-    wordOutput[wordInput[i]] = (wordOutput[wordInput[i]] || 0) + 1;
+const letterCounter = (wording) => {
+  let wordingNew = {};
+  for (let i = 0; i < wording.length; i++) {
+    wordingNew[wording[i]];
   }
-  return wordOutput;
+  console.log(wordingNew);
 };
 
-console.log(letterTick("aaaabbbbcccc"));
-
+letterCounter("aaabbcc");
