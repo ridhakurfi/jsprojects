@@ -45,21 +45,17 @@
 
 // console.log(letterCounting("aabbbbccccc"));
 
-const color = ["Blue", "Red", "Green", "White", "Purple"];
-const firstName = ["Letter", "Box", "Mail", "Envelope", "Package"];
-const lastName = ["Media", "Deliveries", "Mailman", "Visuals", "Design"];
-
-const randoming = (rayray) => {
-  return rayray[Math.floor(Math.random() * rayray.length)];
+const boxBuilder = (row, column) => {
+  const content = "o";
+  let boxResult = [];
+  for (let i = 0; i < row; i++) {
+    let toPush = [];
+    for (let j = 0; j < column; j++) {
+      toPush.push(content);
+    }
+    boxResult.push(toPush);
+  }
+  return boxResult;
 };
 
-const franchiseGenerator = () => {
-  const c = randoming(color);
-  const f = randoming(firstName);
-  const l = randoming(lastName);
-  return `${c} ${f} ${l}`;
-};
-
-for (let i = 0; i < 5; i++) {
-  console.log(franchiseGenerator());
-}
+console.log(boxBuilder(5, 5));
