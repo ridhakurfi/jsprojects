@@ -45,17 +45,24 @@
 
 // console.log(letterCounting("aabbbbccccc"));
 
-const boxBuilder = (row, column) => {
-  const content = "o";
-  let boxResult = [];
-  for (let i = 0; i < row; i++) {
-    let toPush = [];
-    for (let j = 0; j < column; j++) {
-      toPush.push(content);
+function loopCounter(item) {
+  let newItem = "";
+  let aCount = 0;
+  let bCount = 0;
+  let cCount = 0;
+  for (let a = 0; a < item.length; a++) {
+    aCount += 1;
+    newItem += "A";
+    for (let b = 0; b < item.length; b++) {
+      bCount += 1;
+      newItem += "B";
+      for (let c = 0; c < item.length; c++) {
+        cCount += 1;
+        newItem += "C";
+      }
     }
-    boxResult.push(toPush);
   }
-  return boxResult;
-};
+  console.log(newItem, aCount, bCount, cCount);
+}
 
-console.log(boxBuilder(5, 5));
+loopCounter("was");
