@@ -45,24 +45,39 @@
 
 // console.log(letterCounting("aabbbbccccc"));
 
-function loopCounter(item) {
-  let newItem = "";
-  let aCount = 0;
-  let bCount = 0;
-  let cCount = 0;
-  for (let a = 0; a < item.length; a++) {
-    aCount += 1;
-    newItem += "A";
-    for (let b = 0; b < item.length; b++) {
-      bCount += 1;
-      newItem += "B";
-      for (let c = 0; c < item.length; c++) {
-        cCount += 1;
-        newItem += "C";
-      }
+// function generateSeats(rowCount) {
+//   let seats = [];
+//   for (let i = 0; i < rowCount; i++) {
+//     seats.push([]);
+//   }
+//   return seats;
+// }
+
+// function printSeats(seats) {
+//   for (let i = 0; i < seats.length; i++) {
+//     console.log(`Baris ${i}`, seats[i]);
+//   }
+// }
+
+function personManager(people, rowSeats) {
+  // let seats = generateSeats(rowSeats);
+  let seat = [];
+  for (let i = 0; i < rowSeats; i++) {
+    seat.push([]);
+  }
+  let row = 0;
+  for (let i = 0; i < people.length; i++) {
+    seat[row].push(people[i]);
+    row += 1;
+    if (row === rowSeats) {
+      row = 0;
     }
   }
-  console.log(newItem, aCount, bCount, cCount);
+  // console.log(seat);
+  for (let j = 0; j < seat.length; j++) {
+    console.log(`Baris ${j}`, seat[j]);
+  }
+  // printSeats(seats)
 }
 
-loopCounter("was");
+personManager(["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"], 3);
