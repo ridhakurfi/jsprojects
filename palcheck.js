@@ -59,25 +59,38 @@
 //   }
 // }
 
-function personManager(people, rowSeats) {
-  // let seats = generateSeats(rowSeats);
-  let seat = [];
-  for (let i = 0; i < rowSeats; i++) {
-    seat.push([]);
-  }
-  let row = 0;
-  for (let i = 0; i < people.length; i++) {
-    seat[row].push(people[i]);
-    row += 1;
-    if (row === rowSeats) {
-      row = 0;
-    }
-  }
-  // console.log(seat);
-  for (let j = 0; j < seat.length; j++) {
-    console.log(`Baris ${j}`, seat[j]);
-  }
-  // printSeats(seats)
-}
+// function personManager(people, rowSeats) {
+//   // let seats = generateSeats(rowSeats);
+//   let seat = [];
+//   for (let i = 0; i < rowSeats; i++) {
+//     seat.push([]);
+//   }
+//   let row = 0;
+//   for (let i = 0; i < people.length; i++) {
+//     seat[row].push(people[i]);
+//     row += 1;
+//     if (row === rowSeats) {
+//       row = 0;
+//     }
+//   }
+//   // console.log(seat);
+//   for (let j = 0; j < seat.length; j++) {
+//     console.log(`Baris ${j}`, seat[j]);
+//   }
+//   // printSeats(seats)
+// }
 
-personManager(["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"], 3);
+// personManager(["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"], 3);
+
+let suhu = 35;
+if (suhu >= 37.5) {
+  console.log("Anda Demam");
+} else if (suhu >= 37 && suhu < 37.5) {
+  console.log("Anda Terindikasi Demam");
+} else if (suhu < 37) {
+  console.log("Anda Sehat");
+} else {
+  console.log(
+    "Anda bukan manusia, silahkan daftar nama dan planet asal anda di kantor imigrasi terdekat"
+  );
+}
