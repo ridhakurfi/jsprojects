@@ -82,7 +82,7 @@
 
 // personManager(["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"], 3);
 
-let suhu = 33;
+let suhu = 35;
 if (suhu >= 37.5) {
   console.log("Anda Demam");
 } else if (suhu >= 37 && suhu < 37.5) {
