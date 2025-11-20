@@ -99,7 +99,7 @@ class Person {
 
 const person = new Person("Toni");
 
-person.addTrait("cool");
+person.addTrait("kewl");
 person.addTrait("sassy");
 person.addTrait("strong")
 
