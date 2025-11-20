@@ -45,64 +45,39 @@
 
 // console.log(letterCounting("aabbbbccccc"));
 
-// function generateSeats(rowCount) {
-//   let seats = [];
-//   for (let i = 0; i < rowCount; i++) {
-//     seats.push([]);
-//   }
-//   return seats;
-// }
-
-// function printSeats(seats) {
-//   for (let i = 0; i < seats.length; i++) {
-//     console.log(`Baris ${i}`, seats[i]);
-//   }
-// }
-
-// function personManager(people, rowSeats) {
-//   // let seats = generateSeats(rowSeats);
-//   let seat = [];
-//   for (let i = 0; i < rowSeats; i++) {
-//     seat.push([]);
-//   }
-//   let row = 0;
-//   for (let i = 0; i < people.length; i++) {
-//     seat[row].push(people[i]);
-//     row += 1;
-//     if (row === rowSeats) {
-//       row = 0;
-//     }
-//   }
-//   // console.log(seat);
-//   for (let j = 0; j < seat.length; j++) {
-//     console.log(`Baris ${j}`, seat[j]);
-//   }
-//   // printSeats(seats)
-// }
-
-// personManager(["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"], 3);
-
-class Person {
-    constructor(name) {
-        this.name = name;
-        this.traits = [];
-    }
-
-    addTrait(trait) {
-        this.traits.push(trait);
-    }
-
-    describe() {
-        return `${this.name} is ${this.traits.join(", ")}`;
-    }
+function generateSeats(rowCount) {
+  let seats = [];
+  for (let i = 0; i < rowCount; i++) {
+    seats.push([]);
+  }
+  return seats;
 }
 
-const person = new Person("Toni");
+function printSeats(seats) {
+  for (let i = 0; i < seats.length; i++) {
+    console.log(`Baris ${i}`, seats[i]);
+  }
+}
 
-person.addTrait("kewl");
-person.addTrait("sassy");
-person.addTrait("strong")
+function personManager(people, rowSeats) {
+  // let seats = generateSeats(rowSeats);
+  let seat = [];
+  for (let i = 0; i < rowSeats; i++) {
+    seat.push([]);
+  }
+  let row = 0;
+  for (let i = 0; i < people.length; i++) {
+    seat[row].push(people[i]);
+    row += 1;
+    if (row === rowSeats) {
+      row = 0;
+    }
+  }
+  // console.log(seat);
+  for (let j = 0; j < seat.length; j++) {
+    console.log(`Baris ${j}`, seat[j]);
+  }
+  // printSeats(seats)
+}
 
-console.log(person.describe());
-
-
+personManager(["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"], 3);
