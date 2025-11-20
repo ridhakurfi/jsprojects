@@ -82,15 +82,27 @@
 
 // personManager(["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"], 3);
 
-let suhu = 36;
-if (suhu >= 37.5) {
-  console.log("Anda Demam");
-} else if (suhu >= 37 && suhu < 37.5) {
-  console.log("Anda Terindikasi Demam");
-} else if (suhu < 37) {
-  console.log("Anda Sehat");
-} else {
-  console.log(
-    "Anda bukan manusia, silahkan daftar nama dan planet asal anda di kantor imigrasi terdekat"
-  );
+class Person {
+    constructor(name) {
+        this.name = name;
+        this.traits = [];
+    }
+
+    addTrait(trait) {
+        this.traits.push(trait);
+    }
+
+    describe() {
+        return `${this.name} is ${this.traits.join(", ")}`;
+    }
 }
+
+const person = new Person("Toni");
+
+person.addTrait("cool");
+person.addTrait("sassy");
+person.addTrait("strong")
+
+console.log(person.describe());
+
+
