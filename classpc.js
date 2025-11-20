@@ -24,7 +24,7 @@ class Monk extends Hero {
   }
 }
 
-let team = [new Knight("Greatsword", 5000), new Monk("Knuckles", 4500)];
-for (const sq of team) {
+let teamu = [new Knight("Greatsword", 5000), new Monk("Knuckles", 4500)];
+for (const sq of teamu) {
   console.log(sq.describe());
 }
