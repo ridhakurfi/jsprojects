@@ -1,19 +1,30 @@
-class Pet {
-  constructor(friend) {
-    this.friend = friend;
+class School {
+  constructor(profesion, identifier, alias) {
+    this.profesion = profesion;
+    this.identifier = identifier;
+    this.alias = alias;
   }
-  set friend(item) {
-    if (item === "") {
-      this._friend = "Parrot";
-      return;
-    }
-    this._friend = item;
-  }
-  get friend() {
-    return this._friend;
+  describe() {
+    return `${this.profesion} ${this.identifier} ${this.alias}`;
   }
 }
 
-const birb = new Pet("Frog")
-console.log(birb);
+class Student extends School {
+  constructor(identifier, alias) {
+    super("Student", identifier, alias);
+  }
+}
 
+class Teacher extends School {
+  constructor(identifier, alias) {
+    super("Teacher", identifier, alias);
+  }
+}
+
+const arnold = new Student(600, "arnie");
+const regina = new Teacher(500, "regi");
+const classroom = [arnold, regina];
+
+for (const cr of classroom) {
+  console.log(cr.describe());
+}
