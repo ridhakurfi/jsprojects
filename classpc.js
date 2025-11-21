@@ -1,30 +1,19 @@
-class Hero {
-  constructor(job, weapon, exp) {
-    this.job = job;
-    this.weapon = weapon;
-    this.exp = exp;
+class Pet {
+  constructor(friend) {
+    this.friend = friend;
   }
-  changeWeapon(newWeapon) {
-    this.weapon = newWeapon;
+  set friend(item) {
+    if (item === "") {
+      this._friend = "Parrot";
+      return;
+    }
+    this._friend = item;
   }
-  describe() {
-    return `${this.job} ${this.weapon} ${this.exp}`;
-  }
-}
-
-class Knight extends Hero {
-  constructor(weapon, exp) {
-    super("Paladin", weapon, exp);
+  get friend() {
+    return this._friend;
   }
 }
 
-class Monk extends Hero {
-  constructor(weapon, exp) {
-    super("Fighter", weapon, exp);
-  }
-}
+const birb = new Pet("Frog")
+console.log(birb);
 
-let teamu = [new Knight("Greatsword", 5000), new Monk("Knuckles", 4500)];
-for (const sq of teamu) {
-  console.log(sq.describe());
-}
