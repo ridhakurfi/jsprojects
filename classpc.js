@@ -21,7 +21,7 @@ class Dolphin extends Fish {
   }
 }
 
-const goldie = new Gold(4, "Brazil");
+const goldie = new Gold(4, "Californium");
 const dolphie = new Dolphin(2, "Londinium");
 
 const petsies = [goldie, dolphie];
