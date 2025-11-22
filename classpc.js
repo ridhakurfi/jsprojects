@@ -22,7 +22,7 @@ class Dolphin extends Fish {
 }
 
 const goldie = new Gold(4, "Brazil");
-const dolphie = new Dolphin(2, "England");
+const dolphie = new Dolphin(2, "Londinium");
 
 const petsies = [goldie, dolphie];
 
