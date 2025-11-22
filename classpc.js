@@ -1,30 +1,31 @@
-class School {
-  constructor(profesion, identifier, alias) {
-    this.profesion = profesion;
-    this.identifier = identifier;
+class Fish {
+  constructor(alias, fins, location) {
     this.alias = alias;
+    this.fins = fins;
+    this.location = location;
   }
   describe() {
-    return `${this.profesion} ${this.identifier} ${this.alias}`;
+    return `${this.alias} ${this.fins} ${this.location}`;
   }
 }
 
-class Student extends School {
-  constructor(identifier, alias) {
-    super("Student", identifier, alias);
+class Gold extends Fish {
+  constructor(fins, location) {
+    super("Goldfish", fins, location);
   }
 }
 
-class Teacher extends School {
-  constructor(identifier, alias) {
-    super("Teacher", identifier, alias);
+class Dolphin extends Fish {
+  constructor(fins, location) {
+    super("Dorufin", fins, location);
   }
 }
 
-const arnold = new Student(600, "arnie");
-const regina = new Teacher(500, "regi");
-const classroom = [arnold, regina];
+const goldie = new Gold(4, "Brazil");
+const dolphie = new Dolphin(2, "England");
 
-for (const cr of classroom) {
-  console.log(cr.describe());
+const petsies = [goldie, dolphie];
+
+for (const pet of petsies) {
+  console.log(pet.describe());
 }
