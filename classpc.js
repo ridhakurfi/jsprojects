@@ -1,31 +1,24 @@
-class Fish {
-  constructor(alias, fins, location) {
+class Hero {
+  constructor(alias, title) {
     this.alias = alias;
-    this.fins = fins;
-    this.location = location;
+    this.title = title;
   }
   describe() {
-    return `${this.alias} ${this.fins} ${this.location}`;
+    return `${this.title} ${this.alias}`;
   }
 }
 
-class Gold extends Fish {
-  constructor(fins, location) {
-    super("Goldfish", fins, location);
+const aliases = ["Wizard", "Magus", "Warlock", "Knight", "Duelist"];
+const titles = ["Grand", "Chaos", "Holy", "Brave", "Undefeated"];
+
+const heroGenerator = () => {
+  const party = [];
+  for (let i = 0; i < 5; i++) {
+    party.push(new Hero(aliases[i], titles[i]));
   }
-}
+  return party;
+};
 
-class Dolphin extends Fish {
-  constructor(fins, location) {
-    super("Dorufin", fins, location);
-  }
-}
-
-const goldie = new Gold(4, "Californium");
-const dolphie = new Dolphin(2, "Londinium");
-
-const petsies = [goldie, dolphie];
-
-for (const pet of petsies) {
-  console.log(pet.describe());
+for (const hg of heroGenerator()) {
+  console.log(hg.describe());
 }
