@@ -19,6 +19,6 @@ const heroGenerator = () => {
   return party;
 };
 
-// for (const hg of heroGenerator()) {
-//   console.log(hg.describe());
-// }
+for (const hg of heroGenerator()) {
+  console.log(hg.describe());
+}
