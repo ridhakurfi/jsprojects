@@ -1,24 +1,9 @@
-class Hero {
-  constructor(alias, title) {
-    this.alias = alias;
-    this.title = title;
-  }
-  describe() {
-    return `${this.title} ${this.alias}`;
-  }
-}
+const furniture = ["Tsukue", "Mado", "Yuka"];
+const [desk, window, floor] = furniture;
 
-const aliases = ["Wizard", "Magus", "Warlock", "Knight", "Duelist"];
-const titles = ["Grand", "Chaos", "Holy", "Brave", "Undefeated"];
+console.log(desk);
 
-const heroGenerator = () => {
-  const party = [];
-  for (let i = 0; i < 5; i++) {
-    party.push(new Hero(aliases[i], titles[i]));
-  }
-  return party;
-};
+const vehicle = { material: "Steel", weapon: "Laser", movement: "Crawlers" };
+const {material, weapon, movement} = vehicle;
 
-for (const hg of heroGenerator()) {
-  console.log(hg.describe());
-}
+console.log(material);
