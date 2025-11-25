@@ -1,9 +1,12 @@
-const furniture = ["Tsukue", "Mado", "Yuka"];
-const [desk, window, floor] = furniture;
+const files = [
+  { id: 1, product: "Soda", price: 10 },
+  { id: 2, product: "Tea", price: 5 },
+];
 
-console.log(desk);
+const productsWithTax = files.map((item) => ({
+  ...item,
+  tax: item.price * 0.1,
+  total: item.price * 1.1,
+}));
 
-const vehicle = { material: "Steel", weapon: "Laser", movement: "Crawlers" };
-const {material, weapon, movement} = vehicle;
-
-console.log(weapon);
+console.log(productsWithTax);
