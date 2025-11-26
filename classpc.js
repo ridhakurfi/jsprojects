@@ -1,12 +1,11 @@
-const all = [
-  { id: 1, product: "Soda", price: 10 },
-  { id: 2, product: "Tea", price: 5 },
+const biome = [
+  { modifier: "Gloomy", alias: "Valley", exp: 3000 },
+  { modifier: "Dark", alias: "Tundra", exp: 2500 },
+  { modifier: "Scorching", alias: "Dessert", exp: 3500 },
 ];
 
-const productsWithTax = all.map((item) => ({
-  ...item,
-  tax: item.price * 0.1,
-  total: item.price * 1.1,
-}));
-
-console.log(productsWithTax);
+const bioma = biome.map(({ modifier, alias, exp }) => {
+  const secret = exp / 500;
+  return { modifier, alias, exp, secret };
+});
+console.log(bioma);
