@@ -4,8 +4,8 @@ const biome = [
   { modifier: "Scorching", alias: "Dessert", exp: 3500 },
 ];
 
-const biomass = biome.map(({ modifier, alias, exp }) => {
+const bio = biome.map(({ modifier, alias, exp }) => {
   const secret = exp / 500;
   return { modifier, alias, exp, secret };
 });
-console.log(biomass);
+console.log(bio);
